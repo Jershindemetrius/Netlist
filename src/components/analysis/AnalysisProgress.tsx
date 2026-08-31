@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, RefreshCw, Clock } from "lucide-react";
+import { CheckCircle2, Loader2, Clock, Cpu, Sparkles } from "lucide-react";
 import { ProcessingStep } from "../../lib/types";
 
 interface AnalysisProgressProps {
@@ -10,70 +10,98 @@ interface AnalysisProgressProps {
 }
 
 export const AnalysisProgress: React.FC<AnalysisProgressProps> = ({ steps, currentStep }) => {
+  const activeStepNum = currentStep || 1;
+  const progressPercent = Math.min(100, Math.round((activeStepNum / steps.length) * 100));
+
   return (
     <div className="w-full max-w-5xl mx-auto my-8 space-y-6">
-      {/* Header section matching Screenshot 1 */}
-      <div>
-        <h1 className="text-4xl md:text-5xl font-sans font-black tracking-tight text-neutral-950 uppercase mb-2">
-          ANALYZING CIRCUIT
-        </h1>
-        <p className="font-mono text-xs text-neutral-600 tracking-wider">
-          JOB_ID: 9X4-ALF-001 &nbsp;|&nbsp; INGEST: 1024x1024 PNG &nbsp;|&nbsp; THREADS: 8
-        </p>
+      {/* Header section */}
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 text-indigo-600 text-xs font-semibold uppercase tracking-wider mb-1">
+            <Cpu className="w-4 h-4 animate-spin text-indigo-600" />
+            <span>Real-Time CV Pipeline Executing</span>
+          </div>
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+            Analyzing Circuit Diagram
+          </h1>
+          <p className="text-xs text-slate-500 mt-1">
+            Running YOLO11 symbol localization, terminal estimation, skeleton wire tracing, and net graph reconstruction.
+          </p>
+        </div>
+
+        {/* Overall Progress Bar Card */}
+        <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-2xs min-w-[220px]">
+          <div className="flex items-center justify-between text-xs font-bold text-slate-900 mb-2">
+            <span>Processing</span>
+            <span className="text-indigo-600">{progressPercent}%</span>
+          </div>
+          <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+            <div
+              className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+        </div>
       </div>
 
-      {/* 2-Column Split Layout matching Screenshot 1 */}
+      {/* 2-Column Split Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Left Column: Numbered Step List */}
-        <div className="lg:col-span-7 bg-white border border-neutral-300 divide-y divide-neutral-200 shadow-sm">
+        <div className="lg:col-span-7 bg-white border border-slate-200 rounded-2xl divide-y divide-slate-100 shadow-xs overflow-hidden">
           {steps.map((step) => {
-            const isCompleted = step.status === "completed";
-            const isProcessing = step.status === "processing";
+            const isCompleted = step.status === "completed" || step.id < activeStepNum;
+            const isProcessing = step.status === "processing" || step.id === activeStepNum;
             const stepNumberStr = step.id < 10 ? `0${step.id}` : `${step.id}`;
 
             return (
               <div
                 key={step.id}
-                className={`flex items-center justify-between px-6 py-4 transition-all duration-150 border-l-4 ${
+                className={`flex items-center justify-between px-6 py-4 transition-all duration-200 border-l-4 ${
                   isProcessing
-                    ? "bg-lime-50/80 border-l-lime-500 font-bold"
+                    ? "bg-indigo-50/70 border-l-indigo-600 font-semibold shadow-2xs"
                     : isCompleted
-                    ? "bg-white border-l-lime-500 text-neutral-900"
-                    : "bg-white border-l-transparent text-neutral-400"
+                    ? "bg-white border-l-emerald-500 text-slate-900"
+                    : "bg-white border-l-transparent text-slate-400 opacity-60"
                 }`}
               >
-                <div className="flex items-center gap-6">
-                  <span className="font-mono text-xs font-bold tracking-widest text-neutral-500">
+                <div className="flex items-center gap-4">
+                  <span className="font-mono text-xs font-semibold text-slate-400">
                     {stepNumberStr}
                   </span>
-                  <span
-                    className={`font-mono text-sm font-bold uppercase tracking-wider ${
-                      isProcessing
-                        ? "text-black"
-                        : isCompleted
-                        ? "text-neutral-900"
-                        : "text-neutral-400"
-                    }`}
-                  >
-                    {step.label}
-                  </span>
+                  <div>
+                    <span
+                      className={`text-sm font-semibold block ${
+                        isProcessing
+                          ? "text-indigo-900"
+                          : isCompleted
+                          ? "text-slate-800"
+                          : "text-slate-400"
+                      }`}
+                    >
+                      {step.label}
+                    </span>
+                    <span className="text-xs text-slate-500 font-normal">
+                      {step.detail}
+                    </span>
+                  </div>
                 </div>
 
                 <div>
                   {isCompleted && (
-                    <div className="w-6 h-6 rounded-full bg-lime-400 text-black flex items-center justify-center shadow-sm">
-                      <CheckCircle2 className="w-4 h-4 text-black fill-lime-400" />
+                    <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shadow-2xs">
+                      <CheckCircle2 className="w-4 h-4" />
                     </div>
                   )}
 
                   {isProcessing && (
-                    <div className="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center animate-spin">
-                      <RefreshCw className="w-3.5 h-3.5" />
+                    <div className="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center animate-spin shadow-2xs">
+                      <Loader2 className="w-4 h-4" />
                     </div>
                   )}
 
                   {!isCompleted && !isProcessing && (
-                    <Clock className="w-5 h-5 text-neutral-300" />
+                    <Clock className="w-5 h-5 text-slate-300" />
                   )}
                 </div>
               </div>
@@ -81,47 +109,40 @@ export const AnalysisProgress: React.FC<AnalysisProgressProps> = ({ steps, curre
           })}
         </div>
 
-        {/* Right Column: LIVE TELEMETRY Card matching Screenshot 1 */}
-        <div className="lg:col-span-5 bg-neutral-100 border border-neutral-300 p-6 shadow-sm flex flex-col items-center justify-center min-h-[380px]">
-          <div className="w-full text-left font-mono text-xs font-bold uppercase text-neutral-700 tracking-widest mb-6">
-            LIVE TELEMETRY
+        {/* Right Column: Live Status Box */}
+        <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col items-center justify-center min-h-[380px]">
+          <div className="w-full flex items-center justify-between text-xs font-semibold text-slate-400 tracking-wider mb-6">
+            <span>LIVE ANALYSIS STATUS</span>
+            <span className="inline-flex items-center gap-1.5 text-indigo-600 font-bold bg-indigo-50 px-2.5 py-1 rounded-full text-[11px]">
+              <Sparkles className="w-3.5 h-3.5 animate-spin" /> Step {activeStepNum} of {steps.length}
+            </span>
           </div>
 
-          {/* Grid Canvas Telemetry Box */}
-          <div className="relative w-64 h-64 bg-white border border-neutral-300 flex items-center justify-center shadow-inner overflow-hidden">
-            {/* Grid Pattern Inside Box */}
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px)",
-                backgroundSize: "24px 24px",
-              }}
-            />
-
-            {/* Animated Geometry Nodes Vector */}
-            <svg className="w-40 h-40 relative z-10 animate-telemetry" viewBox="0 0 100 100">
+          <div className="relative w-64 h-64 bg-slate-50 border border-slate-200 rounded-2xl flex items-center justify-center overflow-hidden shadow-inner">
+            {/* Pulsing Vector Graph Animation */}
+            <svg className="w-44 h-44 relative z-10" viewBox="0 0 100 100">
               <path
-                d="M 20 60 L 40 40 L 60 70 L 80 30"
+                d="M 15 65 L 35 35 L 55 75 L 85 25"
                 fill="none"
-                stroke="#84cc16"
-                strokeWidth="6"
+                stroke="#6366f1"
+                strokeWidth="4.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className="animate-pulse"
               />
-              <circle cx="20" cy="60" r="5" fill="#84cc16" />
-              <circle cx="40" cy="40" r="5" fill="#84cc16" />
-              <circle cx="60" cy="70" r="5" fill="#84cc16" />
-              <circle cx="80" cy="30" r="5" fill="#84cc16" />
+              <circle cx="15" cy="65" r="5" fill="#6366f1" />
+              <circle cx="35" cy="35" r="5" fill="#6366f1" />
+              <circle cx="55" cy="75" r="5" fill="#6366f1" />
+              <circle cx="85" cy="25" r="5" fill="#6366f1" />
             </svg>
           </div>
 
           <div className="mt-6 text-center space-y-1">
-            <p className="font-mono text-xs font-bold text-neutral-900">
-              Detecting circuit geometry...
+            <p className="text-xs font-bold text-slate-900">
+              {steps[activeStepNum - 1]?.label || "Processing circuit layout..."}
             </p>
-            <p className="font-mono text-xs text-neutral-500">
-              Nodes identified: <span className="font-bold text-black font-mono">12</span>
+            <p className="text-xs text-slate-500">
+              {steps[activeStepNum - 1]?.detail || "Running model inference"}
             </p>
           </div>
         </div>

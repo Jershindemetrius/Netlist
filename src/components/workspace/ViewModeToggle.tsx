@@ -14,15 +14,15 @@ export const ViewModeToggle: React.FC<ViewModeToggleProps> = ({
   onChangeTab,
 }) => {
   const tabs: { id: ActiveTab; label: string; icon: React.FC<{ className?: string }> }[] = [
-    { id: "split", label: "3-Column Workspace View", icon: LayoutGrid },
-    { id: "diagram", label: "Original Diagram", icon: ImageIcon },
+    { id: "split", label: "3-Column Workspace", icon: LayoutGrid },
+    { id: "diagram", label: "Original Schematic", icon: ImageIcon },
     { id: "overlay", label: "Detection Overlay", icon: Layers },
     { id: "graph", label: "Circuit Graph", icon: Network },
-    { id: "netlist", label: "Netlist View", icon: FileCode },
+    { id: "netlist", label: "SPICE Netlist", icon: FileCode },
   ];
 
   return (
-    <div className="inline-flex items-center rounded-xl border border-neutral-300 bg-neutral-100 p-1 shadow-sm font-mono text-xs font-semibold">
+    <div className="inline-flex items-center rounded-2xl border border-slate-200 bg-slate-100 p-1 shadow-2xs text-xs font-semibold">
       {tabs.map((tab) => {
         const Icon = tab.icon;
         const isActive = activeTab === tab.id;
@@ -32,13 +32,13 @@ export const ViewModeToggle: React.FC<ViewModeToggleProps> = ({
             key={tab.id}
             type="button"
             onClick={() => onChangeTab(tab.id)}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+            className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl transition-all cursor-pointer ${
               isActive
-                ? "bg-black text-white shadow-sm font-bold"
-                : "text-neutral-600 hover:text-black hover:bg-neutral-200/60"
+                ? "bg-white text-slate-900 shadow-xs font-bold"
+                : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/50"
             }`}
           >
-            <Icon className="w-3.5 h-3.5" />
+            <Icon className="w-4 h-4 text-indigo-600" />
             <span>{tab.label}</span>
           </button>
         );

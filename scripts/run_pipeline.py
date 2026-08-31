@@ -83,13 +83,23 @@ def run_pipeline(
     )
     canonical_graph = normalizer.normalize(raw_graph)
 
-    # Stage 7: Serialized Exports & Visualization
+    # Stage 7: Intelligent Circuit Graph Analysis
+    logger.info("Stage 7: Running Intelligent Circuit Graph Analyzer (Confidence, Errors, Subcircuits)...")
+    from src.graph_analysis.analyzer import IntelligentGraphAnalyzer
+    analyzer = IntelligentGraphAnalyzer()
+    analysis_report = analyzer.analyze(canonical_graph, image_id=image_id)
+
+    # Stage 8: Serialized Exports & Visualization
     json_path = out_dir / f"{image_id}_circuit_graph.json"
+    analysis_path = out_dir / f"{image_id}_analysis_report.json"
     spice_path = out_dir / f"{image_id}_netlist.cir"
     overlay_path = out_dir / f"{image_id}_annotated.png"
 
     CircuitSerializer.to_json_file(canonical_graph, json_path)
     CircuitSerializer.to_spice_file(canonical_graph, spice_path, title=f"Extracted from {img_path.name}")
+
+    with open(analysis_path, "w", encoding="utf-8") as f:
+        f.write(analysis_report.model_dump_json(indent=2))
 
     annotated_img = annotator.annotate(image, circuit_graph=canonical_graph, skeleton_data=skeleton_data)
     save_image(annotated_img, overlay_path)

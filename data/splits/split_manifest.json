@@ -1,6 +1,6 @@
 {
   "seed": 42,
-  "total_drafters": 1,
+  "total_drafters": 32,
   "ratios": {
     "train": 0.7,
     "val": 0.15,
@@ -8,18 +8,47 @@
   },
   "splits": {
     "train": [
-      "drafter_1"
+      "drafter_0",
+      "drafter_1",
+      "drafter_10",
+      "drafter_11",
+      "drafter_12",
+      "drafter_13",
+      "drafter_14",
+      "drafter_15",
+      "drafter_16",
+      "drafter_17",
+      "drafter_18",
+      "drafter_19",
+      "drafter_21",
+      "drafter_23",
+      "drafter_24",
+      "drafter_25",
+      "drafter_27",
+      "drafter_29",
+      "drafter_4",
+      "drafter_5",
+      "drafter_8",
+      "drafter_9"
     ],
     "val": [
-      "drafter_1"
+      "drafter_2",
+      "drafter_20",
+      "drafter_26",
+      "drafter_28",
+      "drafter_3"
     ],
     "test": [
-      "drafter_1"
+      "drafter_-1",
+      "drafter_22",
+      "drafter_30",
+      "drafter_6",
+      "drafter_7"
     ]
   },
   "counts": {
-    "train_drafters": 1,
-    "val_drafters": 1,
-    "test_drafters": 1
+    "train_drafters": 22,
+    "val_drafters": 5,
+    "test_drafters": 5
   }
 }

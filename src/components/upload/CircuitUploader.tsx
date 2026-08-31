@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { Upload, FileImage, Sparkles, AlertCircle } from "lucide-react";
+import { Upload, FileImage, Sparkles, AlertCircle, ArrowRight } from "lucide-react";
 
 interface CircuitUploaderProps {
   onImageSelect: (file: File) => void;
@@ -51,31 +51,33 @@ export const CircuitUploader: React.FC<CircuitUploaderProps> = ({
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-6">
-      {/* Technical Outer Card matching Screenshot 2 */}
-      <div className="corner-brackets relative bg-white border border-neutral-300 p-8 md:p-12 shadow-sm rounded-none text-center">
-        {/* Corner Marks (bottom) */}
-        <div className="absolute -bottom-0.5 -left-0.5 w-3 h-3 border-b-2 border-l-2 border-black pointer-events-none" />
-        <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 border-b-2 border-r-2 border-black pointer-events-none" />
+    <div className="w-full max-w-4xl mx-auto my-8">
+      {/* Outer Card */}
+      <div className="bg-white border border-slate-200 rounded-2xl p-8 md:p-12 shadow-xs text-center">
+        {/* Model Spec Badge */}
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-indigo-50 border border-indigo-100 text-indigo-700 rounded-full text-xs font-semibold mb-6">
+          <Sparkles className="w-4 h-4 text-indigo-600" />
+          <span>Active Model: Custom Trained YOLO11s (5 Epochs • Batch 30)</span>
+        </div>
 
-        <h1 className="text-3xl md:text-5xl font-sans font-black tracking-tight text-neutral-950 mb-4">
-          Convert a circuit drawing into a graph.
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+          Convert Circuit Diagrams into Graph & SPICE
         </h1>
 
-        <p className="max-w-2xl mx-auto font-mono text-sm text-neutral-600 mb-8 leading-relaxed">
-          Upload a photograph of a hand-drawn electronic schematic. NETLIST detects components, terminals, wires, and electrical connectivity.
+        <p className="max-w-2xl mx-auto text-sm text-slate-600 mb-8 leading-relaxed">
+          Upload a photograph of a hand-drawn electronic schematic. NETLIST detects components, terminals, and net topologies, generating a canonical graph and simulation netlist in real-time.
         </p>
 
-        {/* Inner Drop Box Container matching Screenshot 2 */}
+        {/* Drag & Drop Container */}
         <div
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
           onClick={() => fileInputRef.current?.click()}
-          className={`relative cursor-pointer border border-neutral-300 p-10 transition-all duration-150 ${
+          className={`relative cursor-pointer border-2 border-dashed rounded-2xl p-10 transition-all duration-200 group ${
             isDragOver
-              ? "bg-neutral-100 border-black"
-              : "bg-neutral-50/80 hover:bg-neutral-100/60 hover:border-neutral-800"
+              ? "bg-indigo-50/50 border-indigo-500 shadow-md"
+              : "bg-slate-50/80 border-slate-300 hover:bg-slate-100/70 hover:border-slate-400"
           }`}
         >
           <input
@@ -86,54 +88,46 @@ export const CircuitUploader: React.FC<CircuitUploaderProps> = ({
             className="hidden"
           />
 
-          {/* Inner Drop Labels */}
-          <div className="absolute top-3 left-4 font-mono text-[11px] font-bold text-neutral-400 uppercase tracking-widest">
-            INPUT
-          </div>
-          <div className="absolute top-3 right-4 font-mono text-[11px] font-bold text-neutral-400 uppercase tracking-widest">
-            IMAGE
-          </div>
-          <div className="absolute bottom-3 right-4 font-mono text-[11px] font-bold text-lime-600 uppercase tracking-widest">
-            READY
-          </div>
-
           <div className="flex flex-col items-center justify-center py-6">
-            {/* Diamond Upload Icon Box */}
-            <div className="w-14 h-14 border border-neutral-400 rotate-45 flex items-center justify-center mb-6 bg-white shadow-sm group-hover:border-black">
-              <Upload className="w-6 h-6 text-neutral-800 -rotate-45" />
+            <div className="w-16 h-16 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center mb-5 text-indigo-600 group-hover:scale-110 transition-transform shadow-xs">
+              <Upload className="w-8 h-8" />
             </div>
 
-            <span className="font-mono text-sm font-bold text-neutral-900 uppercase tracking-wider">
-              DROP A CIRCUIT IMAGE HERE
+            <span className="text-base font-semibold text-slate-900 mb-1">
+              Drag & Drop Circuit Photograph Here
+            </span>
+            <span className="text-xs text-slate-500">
+              Supports PNG, JPG, JPEG, or WebP schematic images
             </span>
           </div>
         </div>
 
         {dragError && (
-          <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono font-bold text-red-600 bg-red-50 border border-red-200 px-3 py-1.5 rounded">
+          <div className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-rose-600 bg-rose-50 border border-rose-200 px-3.5 py-2 rounded-xl">
             <AlertCircle className="w-4 h-4" />
             <span>{dragError}</span>
           </div>
         )}
 
-        {/* Action Buttons matching Screenshot 2 */}
+        {/* Action Buttons */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
             disabled={isAnalyzing}
-            className="bg-black hover:bg-neutral-900 text-white font-mono text-sm font-bold px-8 py-3 rounded-none shadow-sm transition-all active:scale-95"
+            className="bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm px-7 py-3 rounded-xl shadow-xs transition-all flex items-center gap-2 cursor-pointer"
           >
-            [ Select Image ]
+            <span>Upload Circuit Image</span>
+            <ArrowRight className="w-4 h-4" />
           </button>
 
           <button
             type="button"
             onClick={onLoadDemo}
             disabled={isAnalyzing}
-            className="bg-white hover:bg-neutral-100 text-black border border-neutral-400 font-mono text-sm font-bold px-8 py-3 rounded-none shadow-sm transition-all active:scale-95"
+            className="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-semibold text-sm px-7 py-3 rounded-xl shadow-2xs transition-all cursor-pointer"
           >
-            [ Demo Circuit ]
+            Load Sample Schematic
           </button>
         </div>
       </div>

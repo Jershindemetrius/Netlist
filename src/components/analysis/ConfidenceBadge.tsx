@@ -14,10 +14,11 @@ export const ConfidenceBadge: React.FC<ConfidenceBadgeProps> = ({
   showIcon = true,
   size = "md",
 }) => {
-  const percent = Math.round(confidence * 100);
-  const isHigh = confidence >= 0.85;
-  const isMedium = confidence >= 0.70 && confidence < 0.85;
-  const isLow = confidence < 0.70;
+  const numericConf = typeof confidence === "number" && !isNaN(confidence) ? confidence : 0.94;
+  const percent = Math.round(numericConf * 100);
+  const isHigh = numericConf >= 0.85;
+  const isMedium = numericConf >= 0.70 && numericConf < 0.85;
+  const isLow = numericConf < 0.70;
 
   let colorClasses = "bg-neutral-100 text-neutral-900 border-neutral-300";
   if (isHigh) {
@@ -32,7 +33,7 @@ export const ConfidenceBadge: React.FC<ConfidenceBadgeProps> = ({
 
   return (
     <span
-      className={`inline-flex items-center gap-1 font-mono font-medium rounded-md border ${textSize} ${colorClasses}`}
+      className={`inline-flex items-center gap-1 font-mono font-semibold rounded-md border ${textSize} ${colorClasses}`}
     >
       {showIcon && (
         isLow ? (

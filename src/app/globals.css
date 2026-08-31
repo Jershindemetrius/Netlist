@@ -2,52 +2,13 @@
 
 @layer base {
   body {
-    background-color: #f7f7f7;
-    background-image: 
-      linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-    background-size: 20px 20px;
-    color: #0a0a0a;
-    font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+    background-color: #f8fafc;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: #0f172a;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-}
-
-/* Technical Corner Framing Brackets */
-.corner-brackets {
-  position: relative;
-}
-.corner-brackets::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
-  pointer-events: none;
-}
-.corner-brackets::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #000000;
-  border-right: 2px solid #000000;
-  pointer-events: none;
-}
-
-/* Custom telemetry pulse animation */
-@keyframes telemetryPulse {
-  0%, 100% { opacity: 0.3; transform: scale(0.95); }
-  50% { opacity: 1; transform: scale(1.05); }
-}
-
-.animate-telemetry {
-  animation: telemetryPulse 2s infinite ease-in-out;
 }
 
 /* Custom scrollbars */
@@ -56,12 +17,12 @@
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 2px;
+  background: #cbd5e1;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #000000;
+  background: #94a3b8;
 }

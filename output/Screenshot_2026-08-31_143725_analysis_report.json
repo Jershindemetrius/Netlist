@@ -1,0 +1,2737 @@
+{
+  "image_id": "Screenshot_2026-08-31_143725",
+  "overall_confidence": 0.17,
+  "overall_bucket": "LOW",
+  "nodes": [
+    {
+      "component_id": "U1",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.2688450515270233,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        108.88768768310547,
+        68.54007720947266,
+        115.38219451904297,
+        75.24034881591797
+      ],
+      "center": [
+        112.13494110107422,
+        71.89021301269531
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            112.13494110107422,
+            68.64295959472656
+          ],
+          "confidence": 0.2016337886452675,
+          "net": null
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            112.13494110107422,
+            75.13746643066406
+          ],
+          "confidence": 0.2016337886452675,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U2",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.1958082914352417,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        111.266845703125,
+        69.61514282226562,
+        119.06771087646484,
+        77.1324691772461
+      ],
+      "center": [
+        115.16727828979492,
+        73.37380599975586
+      ],
+      "orientation": 180.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            119.06771087646484,
+            73.37380599975586
+          ],
+          "confidence": 0.14685621857643127,
+          "net": null
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            111.266845703125,
+            73.37380599975586
+          ],
+          "confidence": 0.14685621857643127,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U3",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.14093242585659027,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        373.2490539550781,
+        44.73152542114258,
+        378.228759765625,
+        49.63090515136719
+      ],
+      "center": [
+        375.73890686035156,
+        47.18121528625488
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            373.2490539550781,
+            47.18121528625488
+          ],
+          "confidence": 0.08455945551395416,
+          "net": "NET19"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            378.228759765625,
+            47.18121528625488
+          ],
+          "confidence": 0.08455945551395416,
+          "net": "NET19"
+        }
+      ]
+    },
+    {
+      "component_id": "U4",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.10394405573606491,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        483.8238220214844,
+        42.779876708984375,
+        489.0909729003906,
+        47.49021530151367
+      ],
+      "center": [
+        486.4573974609375,
+        45.13504600524902
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            483.8238220214844,
+            45.13504600524902
+          ],
+          "confidence": 0.06236643344163895,
+          "net": "NET28"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            489.0909729003906,
+            45.13504600524902
+          ],
+          "confidence": 0.06236643344163895,
+          "net": "NET28"
+        }
+      ]
+    },
+    {
+      "component_id": "U5",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.11747313290834427,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        307.80810546875,
+        89.1488265991211,
+        312.8345947265625,
+        93.99995422363281
+      ],
+      "center": [
+        310.32135009765625,
+        91.57439041137695
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            307.80810546875,
+            91.57439041137695
+          ],
+          "confidence": 0.07048387974500656,
+          "net": "NET29"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            312.8345947265625,
+            91.57439041137695
+          ],
+          "confidence": 0.07048387974500656,
+          "net": "NET29"
+        }
+      ]
+    },
+    {
+      "component_id": "U6",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.1955130696296692,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        89.94449615478516,
+        111.4415512084961,
+        105.86676025390625,
+        128.98080444335938
+      ],
+      "center": [
+        97.9056282043457,
+        120.21117782592773
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            97.9056282043457,
+            112.25004577636719
+          ],
+          "confidence": 0.1466348022222519,
+          "net": "NET30"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            97.9056282043457,
+            128.17230987548828
+          ],
+          "confidence": 0.1466348022222519,
+          "net": "NET30"
+        }
+      ]
+    },
+    {
+      "component_id": "U7",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.11745444685220718,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        286.3471984863281,
+        111.31107330322266,
+        290.970947265625,
+        116.2477035522461
+      ],
+      "center": [
+        288.65907287597656,
+        113.77938842773438
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            286.3471984863281,
+            113.77938842773438
+          ],
+          "confidence": 0.07047266811132431,
+          "net": "NET31"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            290.970947265625,
+            113.77938842773438
+          ],
+          "confidence": 0.07047266811132431,
+          "net": "NET31"
+        }
+      ]
+    },
+    {
+      "component_id": "U8",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.45652785897254944,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        308.3387756347656,
+        111.02709197998047,
+        314.8998107910156,
+        115.91301727294922
+      ],
+      "center": [
+        311.6192932128906,
+        113.47005462646484
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            308.3387756347656,
+            113.47005462646484
+          ],
+          "confidence": 0.27391671538352963,
+          "net": "NET32"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            314.8998107910156,
+            113.47005462646484
+          ],
+          "confidence": 0.27391671538352963,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U9",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.13659635186195374,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        440.0957946777344,
+        131.2655487060547,
+        445.2163391113281,
+        136.5521697998047
+      ],
+      "center": [
+        442.65606689453125,
+        133.9088592529297
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            442.65606689453125,
+            131.3485870361328
+          ],
+          "confidence": 0.1024472638964653,
+          "net": "NET33"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            442.65606689453125,
+            136.46913146972656
+          ],
+          "confidence": 0.1024472638964653,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "Q1",
+      "type": "transistor.bjt",
+      "class_id": 27,
+      "detection_confidence": 0.2864660322666168,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        5.924985408782959,
+        141.11123657226562,
+        34.25214767456055,
+        183.50430297851562
+      ],
+      "center": [
+        20.088566541671753,
+        162.30776977539062
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "B",
+          "semantic_name": "base",
+          "position": [
+            20.088566541671753,
+            148.14418864250183
+          ],
+          "confidence": 0.21484952419996262,
+          "net": "NET1"
+        },
+        {
+          "id": "C",
+          "semantic_name": "collector",
+          "position": [
+            -1.107966661453247,
+            167.97320222854614
+          ],
+          "confidence": 0.21484952419996262,
+          "net": null
+        },
+        {
+          "id": "E",
+          "semantic_name": "emitter",
+          "position": [
+            41.28509974479675,
+            167.97320222854614
+          ],
+          "confidence": 0.21484952419996262,
+          "net": "NET1"
+        }
+      ]
+    },
+    {
+      "component_id": "U10",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.17143197357654572,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        83.92819213867188,
+        138.6450958251953,
+        90.52643585205078,
+        144.63455200195312
+      ],
+      "center": [
+        87.22731399536133,
+        141.63982391357422
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            87.22731399536133,
+            138.34070205688477
+          ],
+          "confidence": 0.1285739801824093,
+          "net": null
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            87.22731399536133,
+            144.93894577026367
+          ],
+          "confidence": 0.1285739801824093,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "U11",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.13223755359649658,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        111.34512329101562,
+        133.76602172851562,
+        118.38316345214844,
+        139.1533203125
+      ],
+      "center": [
+        114.86414337158203,
+        136.4596710205078
+      ],
+      "orientation": 270.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            114.86414337158203,
+            139.97869110107422
+          ],
+          "confidence": 0.09917816519737244,
+          "net": "NET2"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            114.86414337158203,
+            132.9406509399414
+          ],
+          "confidence": 0.09917816519737244,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "U12",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.10552050173282623,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        485.88641357421875,
+        152.4801025390625,
+        490.79815673828125,
+        157.40505981445312
+      ],
+      "center": [
+        488.34228515625,
+        154.9425811767578
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            485.88641357421875,
+            154.9425811767578
+          ],
+          "confidence": 0.06331230103969573,
+          "net": "NET3"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            490.79815673828125,
+            154.9425811767578
+          ],
+          "confidence": 0.06331230103969573,
+          "net": "NET4"
+        }
+      ]
+    },
+    {
+      "component_id": "U13",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.1078394278883934,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        86.08612060546875,
+        162.5386199951172,
+        93.5387954711914,
+        169.8861083984375
+      ],
+      "center": [
+        89.81245803833008,
+        166.21236419677734
+      ],
+      "orientation": 270.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            89.81245803833008,
+            169.93870162963867
+          ],
+          "confidence": 0.08087957091629505,
+          "net": "NET5"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            89.81245803833008,
+            162.48602676391602
+          ],
+          "confidence": 0.08087957091629505,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U14",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.10638059675693512,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        492.91229248046875,
+        187.24099731445312,
+        500.214111328125,
+        194.1629180908203
+      ],
+      "center": [
+        496.5632019042969,
+        190.70195770263672
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            492.91229248046875,
+            190.70195770263672
+          ],
+          "confidence": 0.07978544756770134,
+          "net": "NET6"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            500.214111328125,
+            190.70195770263672
+          ],
+          "confidence": 0.07978544756770134,
+          "net": "NET6"
+        }
+      ]
+    },
+    {
+      "component_id": "U15",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.14186114072799683,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        502.71734619140625,
+        185.0469207763672,
+        509.527587890625,
+        191.6024169921875
+      ],
+      "center": [
+        506.1224670410156,
+        188.32466888427734
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            502.71734619140625,
+            188.32466888427734
+          ],
+          "confidence": 0.10639585554599762,
+          "net": "NET7"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            509.527587890625,
+            188.32466888427734
+          ],
+          "confidence": 0.10639585554599762,
+          "net": "NET7"
+        }
+      ]
+    },
+    {
+      "component_id": "U16",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.2663246691226959,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        81.53561401367188,
+        192.11517333984375,
+        102.8175048828125,
+        203.14332580566406
+      ],
+      "center": [
+        92.17655944824219,
+        197.6292495727539
+      ],
+      "orientation": 180.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            102.8175048828125,
+            197.6292495727539
+          ],
+          "confidence": 0.19974350184202194,
+          "net": "NET2"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            81.53561401367188,
+            197.6292495727539
+          ],
+          "confidence": 0.19974350184202194,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "U17",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.3760664463043213,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        287.18048095703125,
+        220.47337341308594,
+        294.4441833496094,
+        225.90740966796875
+      ],
+      "center": [
+        290.8123321533203,
+        223.19039154052734
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            287.18048095703125,
+            223.19039154052734
+          ],
+          "confidence": 0.18803322315216064,
+          "net": "NET2"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            294.4441833496094,
+            223.19039154052734
+          ],
+          "confidence": 0.18803322315216064,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "U18",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.11099004745483398,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        385.96148681640625,
+        209.18675231933594,
+        393.4640808105469,
+        217.39794921875
+      ],
+      "center": [
+        389.71278381347656,
+        213.29235076904297
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            389.71278381347656,
+            209.54105377197266
+          ],
+          "confidence": 0.08324253559112549,
+          "net": "NET2"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            389.71278381347656,
+            217.04364776611328
+          ],
+          "confidence": 0.08324253559112549,
+          "net": "NET2"
+        }
+      ]
+    },
+    {
+      "component_id": "U19",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.10316362231969833,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        59.19816589355469,
+        236.09408569335938,
+        65.52239227294922,
+        241.78053283691406
+      ],
+      "center": [
+        62.36027908325195,
+        238.93730926513672
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            59.19816589355469,
+            238.93730926513672
+          ],
+          "confidence": 0.07737271673977375,
+          "net": null
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            65.52239227294922,
+            238.93730926513672
+          ],
+          "confidence": 0.07737271673977375,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U20",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.11133585125207901,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        442.56512451171875,
+        241.81422424316406,
+        447.4627685546875,
+        246.8065948486328
+      ],
+      "center": [
+        445.0139465332031,
+        244.31040954589844
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            442.56512451171875,
+            244.31040954589844
+          ],
+          "confidence": 0.0668015107512474,
+          "net": "NET8"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            447.4627685546875,
+            244.31040954589844
+          ],
+          "confidence": 0.0668015107512474,
+          "net": "NET9"
+        }
+      ]
+    },
+    {
+      "component_id": "U21",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.15866602957248688,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        464.71136474609375,
+        241.8025665283203,
+        469.41387939453125,
+        246.6490020751953
+      ],
+      "center": [
+        467.0626220703125,
+        244.2257843017578
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            464.71136474609375,
+            244.2257843017578
+          ],
+          "confidence": 0.09519961774349213,
+          "net": "NET10"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            469.41387939453125,
+            244.2257843017578
+          ],
+          "confidence": 0.09519961774349213,
+          "net": "NET10"
+        }
+      ]
+    },
+    {
+      "component_id": "U22",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.11206300556659698,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        509.51531982421875,
+        241.63690185546875,
+        514.1112670898438,
+        246.55227661132812
+      ],
+      "center": [
+        511.81329345703125,
+        244.09458923339844
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            509.51531982421875,
+            244.09458923339844
+          ],
+          "confidence": 0.06723780333995819,
+          "net": "NET10"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            514.1112670898438,
+            244.09458923339844
+          ],
+          "confidence": 0.06723780333995819,
+          "net": "NET10"
+        }
+      ]
+    },
+    {
+      "component_id": "U23",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.15241290628910065,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        443.08856201171875,
+        308.2824401855469,
+        448.13128662109375,
+        313.16455078125
+      ],
+      "center": [
+        445.60992431640625,
+        310.72349548339844
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            443.08856201171875,
+            310.72349548339844
+          ],
+          "confidence": 0.09144774377346039,
+          "net": "NET9"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            448.13128662109375,
+            310.72349548339844
+          ],
+          "confidence": 0.09144774377346039,
+          "net": "NET9"
+        }
+      ]
+    },
+    {
+      "component_id": "U24",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.20581714808940887,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        109.44552612304688,
+        317.45947265625,
+        118.70148468017578,
+        326.3723449707031
+      ],
+      "center": [
+        114.07350540161133,
+        321.91590881347656
+      ],
+      "orientation": 270.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            114.07350540161133,
+            326.543888092041
+          ],
+          "confidence": 0.15436286106705666,
+          "net": "NET11"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            114.07350540161133,
+            317.2879295349121
+          ],
+          "confidence": 0.15436286106705666,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U25",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.10268162190914154,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        376.9051208496094,
+        330.6981506347656,
+        383.43377685546875,
+        337.0641784667969
+      ],
+      "center": [
+        380.16944885253906,
+        333.88116455078125
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            376.9051208496094,
+            333.88116455078125
+          ],
+          "confidence": 0.05134081095457077,
+          "net": "NET12"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            383.43377685546875,
+            333.88116455078125
+          ],
+          "confidence": 0.05134081095457077,
+          "net": "NET13"
+        }
+      ]
+    },
+    {
+      "component_id": "U26",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.3987666964530945,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        21.51514434814453,
+        364.6976013183594,
+        37.60490036010742,
+        379.691650390625
+      ],
+      "center": [
+        29.560022354125977,
+        372.1946258544922
+      ],
+      "orientation": 180.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            37.60490036010742,
+            372.1946258544922
+          ],
+          "confidence": 0.29907502233982086,
+          "net": "NET14"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            21.51514434814453,
+            372.1946258544922
+          ],
+          "confidence": 0.29907502233982086,
+          "net": "NET14"
+        }
+      ]
+    },
+    {
+      "component_id": "U27",
+      "type": "text",
+      "class_id": 0,
+      "detection_confidence": 0.1036040410399437,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        42.74104690551758,
+        346.43182373046875,
+        49.20613098144531,
+        357.39630126953125
+      ],
+      "center": [
+        45.973588943481445,
+        351.9140625
+      ],
+      "orientation": 90.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            45.973588943481445,
+            348.68152046203613
+          ],
+          "confidence": 0.07770303077995777,
+          "net": "NET15"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            45.973588943481445,
+            355.14660453796387
+          ],
+          "confidence": 0.07770303077995777,
+          "net": "NET15"
+        }
+      ]
+    },
+    {
+      "component_id": "U28",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.27277740836143494,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        46.991268157958984,
+        361.8367919921875,
+        52.02873229980469,
+        366.5347595214844
+      ],
+      "center": [
+        49.510000228881836,
+        364.18577575683594
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            46.991268157958984,
+            364.18577575683594
+          ],
+          "confidence": 0.16366644501686095,
+          "net": "NET14"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            52.02873229980469,
+            364.18577575683594
+          ],
+          "confidence": 0.16366644501686095,
+          "net": "NET16"
+        }
+      ]
+    },
+    {
+      "component_id": "U29",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.10830987989902496,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        377.1434631347656,
+        353.12762451171875,
+        381.74639892578125,
+        357.92333984375
+      ],
+      "center": [
+        379.44493103027344,
+        355.5254821777344
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            377.1434631347656,
+            355.5254821777344
+          ],
+          "confidence": 0.06498592793941498,
+          "net": "NET17"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            381.74639892578125,
+            355.5254821777344
+          ],
+          "confidence": 0.06498592793941498,
+          "net": "NET18"
+        }
+      ]
+    },
+    {
+      "component_id": "U30",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.13358604907989502,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        421.42822265625,
+        353.1339111328125,
+        426.24029541015625,
+        357.9911804199219
+      ],
+      "center": [
+        423.8342590332031,
+        355.5625457763672
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            421.42822265625,
+            355.5625457763672
+          ],
+          "confidence": 0.08015162944793701,
+          "net": "NET20"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            426.24029541015625,
+            355.5625457763672
+          ],
+          "confidence": 0.08015162944793701,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U31",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.13704152405261993,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        5.767590522766113,
+        379.968505859375,
+        10.617119789123535,
+        382.0
+      ],
+      "center": [
+        8.192355155944824,
+        380.9842529296875
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            5.767590522766113,
+            380.9842529296875
+          ],
+          "confidence": 0.08222491443157195,
+          "net": null
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            10.617119789123535,
+            380.9842529296875
+          ],
+          "confidence": 0.08222491443157195,
+          "net": "NET15"
+        }
+      ]
+    },
+    {
+      "component_id": "U32",
+      "type": "junction",
+      "class_id": 1,
+      "detection_confidence": 0.1375332623720169,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        155.93881225585938,
+        379.0654602050781,
+        165.21339416503906,
+        382.0
+      ],
+      "center": [
+        160.57610321044922,
+        380.53273010253906
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            155.93881225585938,
+            380.53273010253906
+          ],
+          "confidence": 0.08251995742321014,
+          "net": "NET21"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            165.21339416503906,
+            380.53273010253906
+          ],
+          "confidence": 0.08251995742321014,
+          "net": "NET21"
+        }
+      ]
+    },
+    {
+      "component_id": "U33",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.10865579545497894,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        222.50807189941406,
+        376.8040771484375,
+        227.06478881835938,
+        381.07379150390625
+      ],
+      "center": [
+        224.78643035888672,
+        378.9389343261719
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            222.50807189941406,
+            378.9389343261719
+          ],
+          "confidence": 0.06519347727298737,
+          "net": "NET22"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            227.06478881835938,
+            378.9389343261719
+          ],
+          "confidence": 0.06519347727298737,
+          "net": "NET23"
+        }
+      ]
+    },
+    {
+      "component_id": "U34",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.12535890936851501,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        421.8166198730469,
+        375.18646240234375,
+        426.57275390625,
+        379.8673400878906
+      ],
+      "center": [
+        424.19468688964844,
+        377.5269012451172
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            421.8166198730469,
+            377.5269012451172
+          ],
+          "confidence": 0.075215345621109,
+          "net": "NET24"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            426.57275390625,
+            377.5269012451172
+          ],
+          "confidence": 0.075215345621109,
+          "net": "NET25"
+        }
+      ]
+    },
+    {
+      "component_id": "U35",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.12411313503980637,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        466.8222351074219,
+        375.15460205078125,
+        471.2292785644531,
+        379.8346862792969
+      ],
+      "center": [
+        469.0257568359375,
+        377.49464416503906
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            466.8222351074219,
+            377.49464416503906
+          ],
+          "confidence": 0.07446788102388381,
+          "net": "NET26"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            471.2292785644531,
+            377.49464416503906
+          ],
+          "confidence": 0.07446788102388381,
+          "net": null
+        }
+      ]
+    },
+    {
+      "component_id": "U36",
+      "type": "terminal",
+      "class_id": 3,
+      "detection_confidence": 0.11248888820409775,
+      "confidence_bucket": "LOW",
+      "bbox": [
+        488.8363952636719,
+        375.09967041015625,
+        493.5155944824219,
+        379.6517639160156
+      ],
+      "center": [
+        491.1759948730469,
+        377.37571716308594
+      ],
+      "orientation": 0.0,
+      "value": null,
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "pin1",
+          "position": [
+            488.8363952636719,
+            377.37571716308594
+          ],
+          "confidence": 0.06749333292245864,
+          "net": "NET27"
+        },
+        {
+          "id": "T2",
+          "semantic_name": "pin2",
+          "position": [
+            493.5155944824219,
+            377.37571716308594
+          ],
+          "confidence": 0.06749333292245864,
+          "net": "NET27"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_U10.T2_to_U9.T2",
+      "source_component": "U10",
+      "source_terminal": "T2",
+      "target_component": "U9",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.14,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U11.T2_to_U9.T2",
+      "source_component": "U11",
+      "source_terminal": "T2",
+      "target_component": "U9",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.13,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U16.T2_to_U9.T2",
+      "source_component": "U16",
+      "source_terminal": "T2",
+      "target_component": "U9",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.14,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U17.T2_to_U9.T2",
+      "source_component": "U17",
+      "source_terminal": "T2",
+      "target_component": "U9",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.14,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U18.T2_to_U9.T2",
+      "source_component": "U18",
+      "source_terminal": "T2",
+      "target_component": "U9",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U10.T2_to_U11.T2",
+      "source_component": "U10",
+      "source_terminal": "T2",
+      "target_component": "U11",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.13,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U10.T2_to_U16.T2",
+      "source_component": "U10",
+      "source_terminal": "T2",
+      "target_component": "U16",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.17,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U10.T2_to_U17.T2",
+      "source_component": "U10",
+      "source_terminal": "T2",
+      "target_component": "U17",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.17,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U10.T2_to_U18.T2",
+      "source_component": "U10",
+      "source_terminal": "T2",
+      "target_component": "U18",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U11.T2_to_U16.T2",
+      "source_component": "U11",
+      "source_terminal": "T2",
+      "target_component": "U16",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.13,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U11.T2_to_U17.T2",
+      "source_component": "U11",
+      "source_terminal": "T2",
+      "target_component": "U17",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.13,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U11.T2_to_U18.T2",
+      "source_component": "U11",
+      "source_terminal": "T2",
+      "target_component": "U18",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U16.T2_to_U17.T2",
+      "source_component": "U16",
+      "source_terminal": "T2",
+      "target_component": "U17",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.27,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U16.T2_to_U18.T2",
+      "source_component": "U16",
+      "source_terminal": "T2",
+      "target_component": "U18",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U17.T2_to_U18.T2",
+      "source_component": "U17",
+      "source_terminal": "T2",
+      "target_component": "U18",
+      "target_terminal": "T2",
+      "net_id": "NET2",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U20.T2_to_U23.T2",
+      "source_component": "U20",
+      "source_terminal": "T2",
+      "target_component": "U23",
+      "target_terminal": "T2",
+      "net_id": "NET9",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U21.T2_to_U22.T2",
+      "source_component": "U21",
+      "source_terminal": "T2",
+      "target_component": "U22",
+      "target_terminal": "T2",
+      "net_id": "NET10",
+      "connection_confidence": 0.11,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U26.T2_to_U28.T1",
+      "source_component": "U26",
+      "source_terminal": "T2",
+      "target_component": "U28",
+      "target_terminal": "T1",
+      "net_id": "NET14",
+      "connection_confidence": 0.27,
+      "confidence_bucket": "LOW"
+    },
+    {
+      "id": "edge_U27.T2_to_U31.T2",
+      "source_component": "U27",
+      "source_terminal": "T2",
+      "target_component": "U31",
+      "target_terminal": "T2",
+      "net_id": "NET15",
+      "connection_confidence": 0.1,
+      "confidence_bucket": "LOW"
+    }
+  ],
+  "errors": [
+    {
+      "error_id": "err_1",
+      "component_id": "U1",
+      "terminal_id": "T1",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U1.T1 is not connected to any net.",
+      "location": [
+        112.13494110107422,
+        68.64295959472656
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_2",
+      "component_id": "U1",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U1.T2 is not connected to any net.",
+      "location": [
+        112.13494110107422,
+        75.13746643066406
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_3",
+      "component_id": "U2",
+      "terminal_id": "T1",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U2.T1 is not connected to any net.",
+      "location": [
+        119.06771087646484,
+        73.37380599975586
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_4",
+      "component_id": "U2",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U2.T2 is not connected to any net.",
+      "location": [
+        111.266845703125,
+        73.37380599975586
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_5",
+      "component_id": "U3",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U3 has confidence 0.14 (<0.70). Verify wire tracing.",
+      "location": [
+        375.73890686035156,
+        47.18121528625488
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_6",
+      "component_id": "U4",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U4 has confidence 0.10 (<0.70). Verify wire tracing.",
+      "location": [
+        486.4573974609375,
+        45.13504600524902
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_7",
+      "component_id": "U5",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U5 has confidence 0.12 (<0.70). Verify wire tracing.",
+      "location": [
+        310.32135009765625,
+        91.57439041137695
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_8",
+      "component_id": "U6",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U6 has confidence 0.20 (<0.70). Verify wire tracing.",
+      "location": [
+        97.9056282043457,
+        120.21117782592773
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_9",
+      "component_id": "U7",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U7 has confidence 0.12 (<0.70). Verify wire tracing.",
+      "location": [
+        288.65907287597656,
+        113.77938842773438
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_10",
+      "component_id": "U8",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U8.T2 is not connected to any net.",
+      "location": [
+        314.8998107910156,
+        113.47005462646484
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_11",
+      "component_id": "U8",
+      "terminal_id": "T1",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U8 has only 1 terminal (T1) connected.",
+      "location": [
+        308.3387756347656,
+        113.47005462646484
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_12",
+      "component_id": "U8",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U8 has confidence 0.46 (<0.70). Verify wire tracing.",
+      "location": [
+        311.6192932128906,
+        113.47005462646484
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_13",
+      "component_id": "U9",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U9 has confidence 0.14 (<0.70). Verify wire tracing.",
+      "location": [
+        442.65606689453125,
+        133.9088592529297
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_14",
+      "component_id": "Q1",
+      "terminal_id": "C",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: Q1.C is not connected to any net.",
+      "location": [
+        -1.107966661453247,
+        167.97320222854614
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_15",
+      "component_id": "Q1",
+      "terminal_id": "B",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: Q1 has confidence 0.29 (<0.70). Verify wire tracing.",
+      "location": [
+        20.088566541671753,
+        162.30776977539062
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_16",
+      "component_id": "U10",
+      "terminal_id": "T1",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U10.T1 is not connected to any net.",
+      "location": [
+        87.22731399536133,
+        138.34070205688477
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_17",
+      "component_id": "U10",
+      "terminal_id": "T2",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U10 has only 1 terminal (T2) connected.",
+      "location": [
+        87.22731399536133,
+        144.93894577026367
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_18",
+      "component_id": "U10",
+      "terminal_id": "T2",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U10 has confidence 0.17 (<0.70). Verify wire tracing.",
+      "location": [
+        87.22731399536133,
+        141.63982391357422
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_19",
+      "component_id": "U11",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U11 has confidence 0.13 (<0.70). Verify wire tracing.",
+      "location": [
+        114.86414337158203,
+        136.4596710205078
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_20",
+      "component_id": "U12",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U12 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        488.34228515625,
+        154.9425811767578
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_21",
+      "component_id": "U13",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U13.T2 is not connected to any net.",
+      "location": [
+        89.81245803833008,
+        162.48602676391602
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_22",
+      "component_id": "U13",
+      "terminal_id": "T1",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U13 has only 1 terminal (T1) connected.",
+      "location": [
+        89.81245803833008,
+        169.93870162963867
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_23",
+      "component_id": "U13",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U13 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        89.81245803833008,
+        166.21236419677734
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_24",
+      "component_id": "U14",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U14 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        496.5632019042969,
+        190.70195770263672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_25",
+      "component_id": "U15",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U15 has confidence 0.14 (<0.70). Verify wire tracing.",
+      "location": [
+        506.1224670410156,
+        188.32466888427734
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_26",
+      "component_id": "U16",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U16 has confidence 0.27 (<0.70). Verify wire tracing.",
+      "location": [
+        92.17655944824219,
+        197.6292495727539
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_27",
+      "component_id": "U17",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U17 has confidence 0.38 (<0.70). Verify wire tracing.",
+      "location": [
+        290.8123321533203,
+        223.19039154052734
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_28",
+      "component_id": "U18",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U18 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        389.71278381347656,
+        213.29235076904297
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_29",
+      "component_id": "U19",
+      "terminal_id": "T1",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U19.T1 is not connected to any net.",
+      "location": [
+        59.19816589355469,
+        238.93730926513672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_30",
+      "component_id": "U19",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U19.T2 is not connected to any net.",
+      "location": [
+        65.52239227294922,
+        238.93730926513672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_31",
+      "component_id": "U20",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U20 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        445.0139465332031,
+        244.31040954589844
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_32",
+      "component_id": "U21",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U21 has confidence 0.16 (<0.70). Verify wire tracing.",
+      "location": [
+        467.0626220703125,
+        244.2257843017578
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_33",
+      "component_id": "U22",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U22 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        511.81329345703125,
+        244.09458923339844
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_34",
+      "component_id": "U23",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U23 has confidence 0.15 (<0.70). Verify wire tracing.",
+      "location": [
+        445.60992431640625,
+        310.72349548339844
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_35",
+      "component_id": "U24",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U24.T2 is not connected to any net.",
+      "location": [
+        114.07350540161133,
+        317.2879295349121
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_36",
+      "component_id": "U24",
+      "terminal_id": "T1",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U24 has only 1 terminal (T1) connected.",
+      "location": [
+        114.07350540161133,
+        326.543888092041
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_37",
+      "component_id": "U24",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U24 has confidence 0.21 (<0.70). Verify wire tracing.",
+      "location": [
+        114.07350540161133,
+        321.91590881347656
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_38",
+      "component_id": "U25",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U25 has confidence 0.10 (<0.70). Verify wire tracing.",
+      "location": [
+        380.16944885253906,
+        333.88116455078125
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_39",
+      "component_id": "U26",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U26 has confidence 0.40 (<0.70). Verify wire tracing.",
+      "location": [
+        29.560022354125977,
+        372.1946258544922
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_40",
+      "component_id": "U27",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U27 has confidence 0.10 (<0.70). Verify wire tracing.",
+      "location": [
+        45.973588943481445,
+        351.9140625
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_41",
+      "component_id": "U28",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U28 has confidence 0.27 (<0.70). Verify wire tracing.",
+      "location": [
+        49.510000228881836,
+        364.18577575683594
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_42",
+      "component_id": "U29",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U29 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        379.44493103027344,
+        355.5254821777344
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_43",
+      "component_id": "U30",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U30.T2 is not connected to any net.",
+      "location": [
+        426.24029541015625,
+        355.5625457763672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_44",
+      "component_id": "U30",
+      "terminal_id": "T1",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U30 has only 1 terminal (T1) connected.",
+      "location": [
+        421.42822265625,
+        355.5625457763672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_45",
+      "component_id": "U30",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U30 has confidence 0.13 (<0.70). Verify wire tracing.",
+      "location": [
+        423.8342590332031,
+        355.5625457763672
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_46",
+      "component_id": "U31",
+      "terminal_id": "T1",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U31.T1 is not connected to any net.",
+      "location": [
+        5.767590522766113,
+        380.9842529296875
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_47",
+      "component_id": "U31",
+      "terminal_id": "T2",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U31 has only 1 terminal (T2) connected.",
+      "location": [
+        10.617119789123535,
+        380.9842529296875
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_48",
+      "component_id": "U31",
+      "terminal_id": "T2",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U31 has confidence 0.14 (<0.70). Verify wire tracing.",
+      "location": [
+        8.192355155944824,
+        380.9842529296875
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_49",
+      "component_id": "U32",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U32 has confidence 0.14 (<0.70). Verify wire tracing.",
+      "location": [
+        160.57610321044922,
+        380.53273010253906
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_50",
+      "component_id": "U33",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U33 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        224.78643035888672,
+        378.9389343261719
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_51",
+      "component_id": "U34",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U34 has confidence 0.13 (<0.70). Verify wire tracing.",
+      "location": [
+        424.19468688964844,
+        377.5269012451172
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_52",
+      "component_id": "U35",
+      "terminal_id": "T2",
+      "error_type": "floating_terminal",
+      "severity": "warning",
+      "message": "Floating Terminal: U35.T2 is not connected to any net.",
+      "location": [
+        471.2292785644531,
+        377.49464416503906
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_53",
+      "component_id": "U35",
+      "terminal_id": "T1",
+      "error_type": "single_terminal",
+      "severity": "warning",
+      "message": "Single Terminal Connection: U35 has only 1 terminal (T1) connected.",
+      "location": [
+        466.8222351074219,
+        377.49464416503906
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_54",
+      "component_id": "U35",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U35 has confidence 0.12 (<0.70). Verify wire tracing.",
+      "location": [
+        469.0257568359375,
+        377.49464416503906
+      ],
+      "is_possible_detection_error": true
+    },
+    {
+      "error_id": "err_55",
+      "component_id": "U36",
+      "terminal_id": "T1",
+      "error_type": "low_confidence_connection",
+      "severity": "warning",
+      "message": "Low Confidence Detection: U36 has confidence 0.11 (<0.70). Verify wire tracing.",
+      "location": [
+        491.1759948730469,
+        377.37571716308594
+      ],
+      "is_possible_detection_error": true
+    }
+  ],
+  "subcircuits": [
+    {
+      "subcircuit_id": "sub_1",
+      "components": [
+        "U1"
+      ],
+      "nets": [],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_2",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_3",
+      "components": [
+        "U3"
+      ],
+      "nets": [
+        "NET19"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_4",
+      "components": [
+        "U4"
+      ],
+      "nets": [
+        "NET28"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_5",
+      "components": [
+        "U5"
+      ],
+      "nets": [
+        "NET29"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_6",
+      "components": [
+        "U6"
+      ],
+      "nets": [
+        "NET30"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_7",
+      "components": [
+        "U7"
+      ],
+      "nets": [
+        "NET31"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_8",
+      "components": [
+        "U8"
+      ],
+      "nets": [
+        "NET32"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_9",
+      "components": [
+        "U10",
+        "U11",
+        "U16",
+        "U17",
+        "U18",
+        "U9"
+      ],
+      "nets": [
+        "NET2",
+        "NET33"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_10",
+      "components": [
+        "Q1"
+      ],
+      "nets": [
+        "NET1"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_11",
+      "components": [
+        "U12"
+      ],
+      "nets": [
+        "NET3",
+        "NET4"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_12",
+      "components": [
+        "U13"
+      ],
+      "nets": [
+        "NET5"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_13",
+      "components": [
+        "U14"
+      ],
+      "nets": [
+        "NET6"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_14",
+      "components": [
+        "U15"
+      ],
+      "nets": [
+        "NET7"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_15",
+      "components": [
+        "U19"
+      ],
+      "nets": [],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_16",
+      "components": [
+        "U20",
+        "U23"
+      ],
+      "nets": [
+        "NET8",
+        "NET9"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_17",
+      "components": [
+        "U21",
+        "U22"
+      ],
+      "nets": [
+        "NET10"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_18",
+      "components": [
+        "U24"
+      ],
+      "nets": [
+        "NET11"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_19",
+      "components": [
+        "U25"
+      ],
+      "nets": [
+        "NET12",
+        "NET13"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_20",
+      "components": [
+        "U26",
+        "U28"
+      ],
+      "nets": [
+        "NET14",
+        "NET16"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_21",
+      "components": [
+        "U27",
+        "U31"
+      ],
+      "nets": [
+        "NET15"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_22",
+      "components": [
+        "U29"
+      ],
+      "nets": [
+        "NET17",
+        "NET18"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_23",
+      "components": [
+        "U30"
+      ],
+      "nets": [
+        "NET20"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_24",
+      "components": [
+        "U32"
+      ],
+      "nets": [
+        "NET21"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_25",
+      "components": [
+        "U33"
+      ],
+      "nets": [
+        "NET22",
+        "NET23"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_26",
+      "components": [
+        "U34"
+      ],
+      "nets": [
+        "NET24",
+        "NET25"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_27",
+      "components": [
+        "U35"
+      ],
+      "nets": [
+        "NET26"
+      ],
+      "is_connected": false
+    },
+    {
+      "subcircuit_id": "sub_28",
+      "components": [
+        "U36"
+      ],
+      "nets": [
+        "NET27"
+      ],
+      "is_connected": false
+    }
+  ],
+  "simplifications": []
+}

@@ -6,20 +6,25 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 import os
 import argparse
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 from src.common.logging import logger
 from src.common.io import load_yaml, ensure_dir
 
 
-def train_yolo_detector(config_path: str = "configs/detection.yaml", resume: bool = False) -> None:
+def train_yolo_detector(
+    config_path: str = "configs/detection.yaml",
+    resume: bool = False,
+    override_epochs: Optional[int] = None,
+    override_batch: Optional[int] = None,
+) -> None:
     """Configures and runs YOLO11 symbol detector training."""
     cfg = load_yaml(config_path)
 
     model_name = cfg.get("model", {}).get("name", "yolo11s") + ".pt"
     dataset_yaml = cfg.get("data", {}).get("dataset_yaml", "data/processed/yolo/dataset.yaml")
-    epochs = cfg.get("training", {}).get("epochs", 100)
-    batch_size = cfg.get("training", {}).get("batch_size", 8)
+    epochs = override_epochs if override_epochs is not None else cfg.get("training", {}).get("epochs", 100)
+    batch_size = override_batch if override_batch is not None else cfg.get("training", {}).get("batch_size", 8)
     img_size = cfg.get("data", {}).get("img_size", 960)
     patience = cfg.get("training", {}).get("patience", 20)
     workers = cfg.get("training", {}).get("workers", 4)
@@ -90,6 +95,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train YOLO11 symbol detector.")
     parser.add_argument("--config", default="configs/detection.yaml", help="Path to detection.yaml")
     parser.add_argument("--resume", action="store_true", help="Resume from last checkpoint")
+    parser.add_argument("--epochs", type=int, default=None, help="Override number of training epochs")
+    parser.add_argument("--batch-size", type=int, default=None, help="Override batch size")
     args = parser.parse_args()
 
-    train_yolo_detector(config_path=args.config, resume=args.resume)
+    train_yolo_detector(
+        config_path=args.config,
+        resume=args.resume,
+        override_epochs=args.epochs,
+        override_batch=args.batch_size,
+    )
