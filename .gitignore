@@ -38,7 +38,7 @@ venv/
 ENV/
 
 # Data and Cache
-data/raw/cghd/drafter_*
+data/raw/
 data/processed/
 data/synthetic/
 data/cache/
