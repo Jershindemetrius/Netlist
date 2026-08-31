@@ -1,0 +1,30 @@
+# Configuration for Classical Computer Vision Wire Tracing & Skeleton Processing
+
+preprocessing:
+  gaussian_blur_kernel: 3
+  gaussian_blur_sigma: 1.0
+  adaptive_thresh_block_size: 25
+  adaptive_thresh_c: 10
+  morph_close_kernel_size: 3
+  remove_small_objects_min_size: 20
+  invert_binary: true           # Foreground strokes = 1 / 255, background = 0
+
+component_masking:
+  expansion_pixels: 4           # Expand bounding box slightly before masking
+  preserve_terminal_zone_radius: 12  # Keep wire pixels entering estimated terminal zones
+
+skeletonization:
+  method: "lee"                 # "lee" or "zhang" from scikit-image
+  prune_short_spurs_length: 5   # Prune branch spurs shorter than 5 pixels
+
+junction_detection:
+  min_degree_for_junction: 3    # 3-way or 4-way intersections
+  cluster_junction_radius: 6    # Group pixel junctions within 6px into a single logical junction
+  crossover_angle_tolerance_deg: 20.0 # Orthogonal straight lines crossing without connection dot
+
+endpoint_matching:
+  max_terminal_snap_radius: 35.0  # Max distance from wire endpoint to candidate terminal
+  direction_weight: 0.35
+  distance_weight: 0.45
+  orientation_weight: 0.20
+  min_connection_confidence: 0.30 # Below this threshold, classify connection as UNKNOWN

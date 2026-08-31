@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "total_drafters": 1,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "splits": {
+    "train": [
+      "drafter_1"
+    ],
+    "val": [
+      "drafter_1"
+    ],
+    "test": [
+      "drafter_1"
+    ]
+  },
+  "counts": {
+    "train_drafters": 1,
+    "val_drafters": 1,
+    "test_drafters": 1
+  }
+}

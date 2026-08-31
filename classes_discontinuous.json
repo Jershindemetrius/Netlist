@@ -1,0 +1,19 @@
+[
+ "capacitor.unpolarized",
+  "text",
+  "gnd",
+  "vss",
+  "voltage.battery",
+  "resistor.photo",
+  "capacitor.unpolarized",
+  "capacitor.polarized",
+  "capacitor.adjustable",
+  "inductor.ferrite",
+  "transformer",
+  "diode.light_emitting",
+  "thyristor",
+  "transistor.photo",
+  "switch",
+  "relay",
+  "crystal"
+]

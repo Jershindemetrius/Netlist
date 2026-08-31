@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netlist"
+version = "0.1.0"
+description = "Computer Vision System for Hand-Drawn Electronic Circuit to Canonical Netlist Reconstruction"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Netlist Team" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "opencv-python>=4.8.0",
+    "scikit-image>=0.21.0",
+    "networkx>=3.1",
+    "pydantic>=2.0.0",
+    "PyYAML>=6.0",
+    "lxml>=4.9.0",
+    "schemdraw>=0.17",
+    "matplotlib>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+torch = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "ultralytics>=8.3.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

@@ -1,0 +1,372 @@
+{
+  "status": "success",
+  "image_id": "C1_D1_P1",
+  "image_url": "/demo/sample_circuit.png",
+  "confidence": 0.89,
+  "metrics": {
+    "components": 5,
+    "nets": 4,
+    "connections": 10
+  },
+  "components": [
+    {
+      "id": "V1",
+      "type": "voltage.dc",
+      "class_id": 7,
+      "confidence": 0.98,
+      "bbox": [
+        80,
+        150,
+        160,
+        310
+      ],
+      "center": [
+        120,
+        230
+      ],
+      "orientation": 0,
+      "value": "9V",
+      "terminals": [
+        {
+          "id": "POS",
+          "semantic_name": "positive",
+          "position": [
+            120,
+            150
+          ],
+          "net": "NET1",
+          "confidence": 0.99
+        },
+        {
+          "id": "NEG",
+          "semantic_name": "negative",
+          "position": [
+            120,
+            310
+          ],
+          "net": "0",
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "id": "R1",
+      "type": "resistor",
+      "class_id": 10,
+      "confidence": 0.94,
+      "bbox": [
+        220,
+        120,
+        340,
+        180
+      ],
+      "center": [
+        280,
+        150
+      ],
+      "orientation": 0,
+      "value": "10k\u03a9",
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "connector",
+          "position": [
+            220,
+            150
+          ],
+          "net": "NET1",
+          "confidence": 0.96
+        },
+        {
+          "id": "T2",
+          "semantic_name": "connector",
+          "position": [
+            340,
+            150
+          ],
+          "net": "NET2",
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "type": "capacitor.unpolarized",
+      "class_id": 13,
+      "confidence": 0.91,
+      "bbox": [
+        380,
+        180,
+        460,
+        300
+      ],
+      "center": [
+        420,
+        240
+      ],
+      "orientation": 90,
+      "value": "100nF",
+      "terminals": [
+        {
+          "id": "T1",
+          "semantic_name": "connector",
+          "position": [
+            420,
+            180
+          ],
+          "net": "NET2",
+          "confidence": 0.91
+        },
+        {
+          "id": "T2",
+          "semantic_name": "connector",
+          "position": [
+            420,
+            300
+          ],
+          "net": "0",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "type": "diode.light_emitting",
+      "class_id": 21,
+      "confidence": 0.88,
+      "bbox": [
+        480,
+        120,
+        580,
+        200
+      ],
+      "center": [
+        530,
+        160
+      ],
+      "orientation": 0,
+      "value": "Red LED",
+      "terminals": [
+        {
+          "id": "A",
+          "semantic_name": "anode",
+          "position": [
+            480,
+            160
+          ],
+          "net": "NET2",
+          "confidence": 0.89
+        },
+        {
+          "id": "K",
+          "semantic_name": "cathode",
+          "position": [
+            580,
+            160
+          ],
+          "net": "NET3",
+          "confidence": 0.61
+        }
+      ]
+    },
+    {
+      "id": "Q1",
+      "type": "transistor.bjt",
+      "class_id": 28,
+      "confidence": 0.85,
+      "bbox": [
+        620,
+        180,
+        720,
+        310
+      ],
+      "center": [
+        670,
+        245
+      ],
+      "orientation": 0,
+      "value": "2N2222",
+      "terminals": [
+        {
+          "id": "B",
+          "semantic_name": "base",
+          "position": [
+            620,
+            245
+          ],
+          "net": "NET3",
+          "confidence": 0.78
+        },
+        {
+          "id": "C",
+          "semantic_name": "collector",
+          "position": [
+            690,
+            180
+          ],
+          "net": "NET1",
+          "confidence": 0.88
+        },
+        {
+          "id": "E",
+          "semantic_name": "emitter",
+          "position": [
+            690,
+            310
+          ],
+          "net": "0",
+          "confidence": 0.93
+        }
+      ]
+    }
+  ],
+  "nets": {
+    "NET1": [
+      "V1.POS",
+      "R1.T1",
+      "Q1.C"
+    ],
+    "NET2": [
+      "R1.T2",
+      "C1.T1",
+      "D1.A"
+    ],
+    "NET3": [
+      "D1.K",
+      "Q1.B"
+    ],
+    "0": [
+      "V1.NEG",
+      "C1.T2",
+      "Q1.E"
+    ]
+  },
+  "wires": [
+    {
+      "id": "W1",
+      "points": [
+        [
+          120,
+          150
+        ],
+        [
+          220,
+          150
+        ]
+      ],
+      "confidence": 0.97
+    },
+    {
+      "id": "W2",
+      "points": [
+        [
+          340,
+          150
+        ],
+        [
+          420,
+          150
+        ],
+        [
+          420,
+          180
+        ]
+      ],
+      "confidence": 0.94
+    },
+    {
+      "id": "W3",
+      "points": [
+        [
+          340,
+          150
+        ],
+        [
+          480,
+          160
+        ]
+      ],
+      "confidence": 0.91
+    },
+    {
+      "id": "W4",
+      "points": [
+        [
+          580,
+          160
+        ],
+        [
+          620,
+          245
+        ]
+      ],
+      "confidence": 0.61
+    },
+    {
+      "id": "W5",
+      "points": [
+        [
+          120,
+          310
+        ],
+        [
+          420,
+          300
+        ],
+        [
+          690,
+          310
+        ]
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "W6",
+      "points": [
+        [
+          220,
+          150
+        ],
+        [
+          220,
+          80
+        ],
+        [
+          690,
+          80
+        ],
+        [
+          690,
+          180
+        ]
+      ],
+      "confidence": 0.92
+    }
+  ],
+  "junctions": [
+    {
+      "id": "J1",
+      "position": [
+        220,
+        150
+      ],
+      "degree": 3
+    },
+    {
+      "id": "J2",
+      "position": [
+        340,
+        150
+      ],
+      "degree": 3
+    },
+    {
+      "id": "J3",
+      "position": [
+        420,
+        300
+      ],
+      "degree": 3
+    }
+  ]
+}

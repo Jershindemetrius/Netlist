@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Resistor Name",
+    "regex": "^R[0-9]+[Ω]$"
+  },
+  {
+    "name": "Resistance",
+    "regex": "[0-9]*([,.][0-9]+)?(\\s*Ω|\\s*kΩ|\\s*KΩ|ohms|\\s*M|K|R|k|\\s*meg|Ohms|(\\s*ohm|\\s*Ohm|m|M))+?[0-9]*"
+  },
+  {
+    "name": "Capacitor Name",
+    "regex": "^C[0-9]+(F|µF)$"
+  },
+  {
+    "name": "Capacity",
+    "regex":"[0-9]*([,.][0-9]+)?[KunµpPfFm][a-zA-Z]?[0-9]*"
+  },
+  {
+    "name": "Inductivity Name",
+    "regex": "^(nH|µH|mH|mh)$"
+  },
+  {
+    "name": "Inductivity",
+    "regex": "^[0-9]+(?:[,.][0-9]+)?(nH|µH|mH|mh)$"
+  },
+  {
+    "name": "Frequency Name",
+    "regex": "(?:m|MHz|k|K|G|hz|KHz|Hz)$"
+  },
+  {
+    "name": "Frequency",
+    "regex": "[0-9]+(?:[,.][0-9]+)?(?:m|MHz|k|K|G|hz|Hz|HZ)$"
+  },
+  {
+    "name": "Wattage Name",
+    "regex": "^(?:KW|W|Watt|Watts)$"
+  },
+  {
+    "name": "Wattage",
+    "regex": "^[0-9]+(?:[\\/,.][0-9]+)?(?:w|KW|\\s*W|watt|\\s*Watt|Watts|\\s*WATTS)$"
+  },
+  {
+    "name": "Current Name",
+    "regex": "(A|mA|MA|UA)$"
+  },
+  {
+    "name": "Current",
+    "regex": "^[0-9]+(?:[,.][0-9]+)?(A|µA|mA|VA|MA)$"
+  },
+  {
+    "name": "Voltage Name",
+    "regex": "(v|V|VCD|V\\s*AC|AC|DC|VCC|VDD)$"
+  },
+  {
+    "name": "Voltage",
+    "regex": "^[-|+|...|0-9]+(?:[,.][0-9]+)?(?:V|v|\\s*V|\\s*volt|uV|uv|VOLT|Volt|kV|Volts|nV|nv|KV|VDC|V\\s*AC|[\\dVv]*[,\\dA-Z]*[A-Z\\s*]*-[\\s*\\d]*[,\\dA-Z]*)$"
+  },
+  {
+    "name": "AC Name",
+    "regex": "^(?:V|VDC|VAC|ac|AC)$"
+  },
+  {
+    "name": "AC",
+    "regex": "^[0-9]+(?:[,.][0-9]+)?(?:V|AC|VDC|\\s*V\\s*AC)$"
+  },
+  {
+    "name": "DC Name",
+    "regex": "^(?:V|VDC|VAC|DC|Dc)$"
+  },
+  {
+    "name": "DC",
+    "regex": "^[-|+|0-9]+(?:[,.][0-9]+)?(?:V|\\s*VDC|vdc|VAC)$"
+  },
+  {
+    "name": "Component Name",
+    "regex": "[0-9\\(]*[\\s*a-zA-Z]+[\\)]*"
+  },
+  {
+    "name": "Name",
+    "class": "resistor",
+    "regex": "^R[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^VR[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^C[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^Q[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^D[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^L[0-9]+$"
+  },
+  {
+    "name": "Name",
+    "regex": "^(SW|Sw)[0-9]+$"
+  },
+  {
+    "name": "voltage-type",
+    "regex": "(VCC|VDD)$"
+  },
+  {
+    "name": "Device",
+    "class": "transistor.bjt",
+    "regex": "^[0-9]?[A-Z]+[0-9]+$"
+  },
+  {
+    "name": "Taper",
+    "class": "resistor.adjustable",
+    "regex": "(log|lin)$"
+  },
+  {
+    "name": "Pin",
+    "regex": "^[0-9]{1,2}$"
+  }
+
+]

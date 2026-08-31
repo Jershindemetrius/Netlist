@@ -1,0 +1,524 @@
+# Class-Aware Terminal Templates for Symbol Terminal Estimation
+# Defines normalized terminal positions [x, y] in [0, 1] relative to bounding box top-left at 0 deg rotation.
+# Coordinate convention: [0, 0] is top-left, [1, 1] is bottom-right.
+
+default_fallback:
+  terminals:
+    - id: "T1"
+      name: "pin1"
+      position: [0.0, 0.5]
+      direction: [-1.0, 0.0]
+    - id: "T2"
+      name: "pin2"
+      position: [1.0, 0.5]
+      direction: [1.0, 0.0]
+  is_symmetric: true
+  rotation_sensitive: true
+
+templates:
+  # Passive 2-Terminal Components
+  resistor:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  resistor.adjustable:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+      - id: "WIPER"
+        name: "wiper"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+    is_symmetric: false
+
+  resistor.photo:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  capacitor.unpolarized:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  capacitor.polarized:
+    terminals:
+      - id: "POS"
+        name: "positive"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "NEG"
+        name: "negative"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  capacitor.adjustable:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  inductor:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  inductor.ferrite:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  inductor.coupled:
+    terminals:
+      - id: "P1"
+        name: "primary1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "P2"
+        name: "primary2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "S1"
+        name: "secondary1"
+        position: [1.0, 0.25]
+        direction: [1.0, 0.0]
+      - id: "S2"
+        name: "secondary2"
+        position: [1.0, 0.75]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  transformer:
+    terminals:
+      - id: "P1"
+        name: "primary_top"
+        position: [0.0, 0.2]
+        direction: [-1.0, 0.0]
+      - id: "P2"
+        name: "primary_bottom"
+        position: [0.0, 0.8]
+        direction: [-1.0, 0.0]
+      - id: "S1"
+        name: "secondary_top"
+        position: [1.0, 0.2]
+        direction: [1.0, 0.0]
+      - id: "S2"
+        name: "secondary_bottom"
+        position: [1.0, 0.8]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  # Diodes & Thyristors
+  diode:
+    terminals:
+      - id: "A"
+        name: "anode"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "K"
+        name: "cathode"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  diode.light_emitting:
+    terminals:
+      - id: "A"
+        name: "anode"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "K"
+        name: "cathode"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  diode.zener:
+    terminals:
+      - id: "A"
+        name: "anode"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "K"
+        name: "cathode"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  diode.thyrector:
+    terminals:
+      - id: "A"
+        name: "anode"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "K"
+        name: "cathode"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  thyristor:
+    terminals:
+      - id: "A"
+        name: "anode"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "K"
+        name: "cathode"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+      - id: "G"
+        name: "gate"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  # Transistors
+  transistor.bjt:
+    terminals:
+      - id: "B"
+        name: "base"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "C"
+        name: "collector"
+        position: [0.7, 1.0]
+        direction: [0.0, 1.0]
+      - id: "E"
+        name: "emitter"
+        position: [0.7, 0.0]
+        direction: [0.0, -1.0]
+    is_symmetric: false
+
+  transistor.fet:
+    terminals:
+      - id: "G"
+        name: "gate"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "D"
+        name: "drain"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "S"
+        name: "source"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  transistor.photo:
+    terminals:
+      - id: "C"
+        name: "collector"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "E"
+        name: "emitter"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  # Power Sources & Ground
+  voltage.dc:
+    terminals:
+      - id: "POS"
+        name: "positive"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "NEG"
+        name: "negative"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  voltage.ac:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "T2"
+        name: "connector"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: true
+
+  voltage.battery:
+    terminals:
+      - id: "POS"
+        name: "positive"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "NEG"
+        name: "negative"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  gnd:
+    terminals:
+      - id: "GND"
+        name: "ground"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+    is_symmetric: true
+
+  vss:
+    terminals:
+      - id: "VSS"
+        name: "supply"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: true
+
+  # Logic Gates
+  and:
+    terminals:
+      - id: "IN1"
+        name: "input1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "IN2"
+        name: "input2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  or:
+    terminals:
+      - id: "IN1"
+        name: "input1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "IN2"
+        name: "input2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  not:
+    terminals:
+      - id: "IN"
+        name: "input"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  nand:
+    terminals:
+      - id: "IN1"
+        name: "input1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "IN2"
+        name: "input2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  nor:
+    terminals:
+      - id: "IN1"
+        name: "input1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "IN2"
+        name: "input2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  xor:
+    terminals:
+      - id: "IN1"
+        name: "input1"
+        position: [0.0, 0.25]
+        direction: [-1.0, 0.0]
+      - id: "IN2"
+        name: "input2"
+        position: [0.0, 0.75]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: false
+
+  # Operational Amplifiers & ICs
+  operational_amplifier:
+    terminals:
+      - id: "IN_INV"
+        name: "inverting"
+        position: [0.0, 0.3]
+        direction: [-1.0, 0.0]
+      - id: "IN_NONINV"
+        name: "non_inverting"
+        position: [0.0, 0.7]
+        direction: [-1.0, 0.0]
+      - id: "OUT"
+        name: "output"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+      - id: "V_POS"
+        name: "pos_supply"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "V_NEG"
+        name: "neg_supply"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  integrated_circuit.ne555:
+    terminals:
+      - id: "PIN1"
+        name: "GND"
+        position: [0.0, 0.2]
+        direction: [-1.0, 0.0]
+      - id: "PIN2"
+        name: "TRIG"
+        position: [0.0, 0.4]
+        direction: [-1.0, 0.0]
+      - id: "PIN3"
+        name: "OUT"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+      - id: "PIN4"
+        name: "RESET"
+        position: [0.5, 0.0]
+        direction: [0.0, -1.0]
+      - id: "PIN5"
+        name: "CTRL"
+        position: [1.0, 0.8]
+        direction: [1.0, 0.0]
+      - id: "PIN6"
+        name: "THRES"
+        position: [0.0, 0.6]
+        direction: [-1.0, 0.0]
+      - id: "PIN7"
+        name: "DISCH"
+        position: [0.0, 0.8]
+        direction: [-1.0, 0.0]
+      - id: "PIN8"
+        name: "VCC"
+        position: [0.5, 1.0]
+        direction: [0.0, 1.0]
+    is_symmetric: false
+
+  # Switches, Relays, Fuse, Lamp
+  switch:
+    terminals:
+      - id: "T1"
+        name: "pole1"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "pole2"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  fuse:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  lamp:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true
+
+  crystal:
+    terminals:
+      - id: "T1"
+        name: "connector"
+        position: [0.0, 0.5]
+        direction: [-1.0, 0.0]
+      - id: "T2"
+        name: "connector"
+        position: [1.0, 0.5]
+        direction: [1.0, 0.0]
+    is_symmetric: true

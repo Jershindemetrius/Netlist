@@ -1,0 +1,19 @@
+# Circuit Graph Comparison and Netlist Evaluation Configuration
+
+graph_matching:
+  exact_ged_max_nodes: 25       # Run exact A* Graph Edit Distance only for smaller graphs to avoid exponential blowup
+  ged_timeout_seconds: 5.0
+  use_canonical_bipartite_match: true # Scalable bipartite matching for fast evaluation
+
+weights:
+  component_type_mismatch_cost: 2.0
+  component_insertion_cost: 1.5
+  component_deletion_cost: 1.5
+  terminal_mismatch_cost: 1.0
+  net_connection_insertion_cost: 1.0
+  net_connection_deletion_cost: 1.0
+
+reporting:
+  export_json: true
+  export_text_summary: true
+  output_dir: "reports"

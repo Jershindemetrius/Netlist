@@ -1,0 +1,29 @@
+# Core Scientific & Array Operations
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+scikit-image>=0.21.0
+pillow>=10.0.0
+
+# Deep Learning & Object Detection
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.3.0
+
+# Graph Algorithms & Data Modeling
+networkx>=3.1
+pydantic>=2.0.0
+PyYAML>=6.0
+
+# Data Formats & Schematics
+lxml>=4.9.0
+schemdraw>=0.17
+matplotlib>=3.7.0
+
+# Testing & Quality
+pytest>=7.4.0
+tqdm>=4.65.0
+rich>=13.0.0

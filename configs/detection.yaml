@@ -1,0 +1,49 @@
+# Detection Configuration for YOLO11 Symbol Detector
+
+model:
+  name: "yolo11s"              # yolo11n, yolo11s, yolo11m
+  weights_path: "models/checkpoints/best.pt"
+  pretrained_backbone: "yolo11s.pt"
+
+data:
+  dataset_yaml: "data/processed/yolo/dataset.yaml"
+  classes_file: "classes.json"
+  img_size: 960               # High resolution for fine hand-drawn symbols (640, 960, 1024)
+  tile_size: 640
+  tile_overlap: 0.2
+  use_tiling: false           # Optional tiled inference for large high-res images
+
+training:
+  epochs: 100
+  batch_size: 8               # Conservative default, adapts to GPU memory (e.g. 16 on Colab T4/A100)
+  workers: 4
+  learning_rate: 0.01
+  optimizer: "AdamW"          # SGD, AdamW
+  patience: 20
+  mixed_precision: true       # Automatic AMP on CUDA
+  device: "auto"              # "auto", "cuda", "cpu", "0", "0,1"
+  save_period: 10
+  checkpoint_dir: "models/checkpoints"
+  colab_drive_dir: "/content/drive/MyDrive/netlist_checkpoints"
+
+augmentation:
+  degrees: 15.0               # Small rotations simulating hand tilts
+  translate: 0.1
+  scale: 0.2
+  shear: 5.0
+  perspective: 0.0005
+  fliplr: 0.0                 # Disallow random flip if asymmetric symbols are polarity-sensitive
+  flipud: 0.0
+  mosaic: 0.5
+  mixup: 0.1
+  hsv_h: 0.015
+  hsv_s: 0.2
+  hsv_v: 0.2
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_det: 300
+  half: false                 # FP16 inference
+  cache_detections: true
+  cache_dir: "data/cache/detections"

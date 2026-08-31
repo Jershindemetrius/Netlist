@@ -1,0 +1,26 @@
+{
+  "ged_score": 23.5,
+  "component_precision": 0.0,
+  "component_recall": 0.0,
+  "component_f1": 0.0,
+  "net_precision": 0.0,
+  "net_recall": 0.0,
+  "net_f1": 0.0,
+  "node_insertions": 0,
+  "node_deletions": 7,
+  "node_mismatches": 0,
+  "edge_insertions": 0,
+  "edge_deletions": 13,
+  "details": {
+    "predicted_components": 0,
+    "ground_truth_components": 7,
+    "matched_components": 0,
+    "predicted_nets": 0,
+    "ground_truth_nets": 5,
+    "matched_nets": 0,
+    "predicted_edges": 0,
+    "ground_truth_edges": 13,
+    "matched_edges": 0,
+    "exact_networkx_ged": 76.0
+  }
+}
